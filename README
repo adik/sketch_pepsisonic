@@ -1,0 +1,8 @@
+
+
+avrdude -p m16u2 -P usb -c avrispmkii -U flash:w:Arduino-COMBINED-dfu-usbserial-atmega16u2-Uno-Rev3.hex -U lfuse:w:0xFF:m -U hfuse:w:0xD9:m -U efuse:w:0xF4:m -U lock:w:0x0F:m
+avrdude -p m16u2 -P usb -c avrispmkii -U flash:w:HIDUINO_MIDI.hex -U lfuse:w:0xFF:m -U hfuse:w:0xD9:m -U efuse:w:0xF4:m -U lock:w:0x0F:m
+
+./avrdude -C ./avrdude.conf  -pm328p -cavrispmkii -Pusb -D -Uflash:w:sketch_pepsisonic.hex
+
+
